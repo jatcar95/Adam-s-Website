@@ -17,8 +17,14 @@ body {
 
 #profile {
 	width: 200px;
+	float: left;
 }
 
 #blog {
+	width: ;
+	float: left;
+}
 
+.img {
+	width: inherit;
 }
