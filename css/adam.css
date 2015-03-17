@@ -6,10 +6,19 @@ body {
 	text-align: center;
 }
 
-#profile {
+#menu {
+	width: 90%;
+}
 
+.menuitem {
+	width: 25%;
+	float: left;
+}
+
+#profile {
+	width: 200px;
 }
 
 #blog {
-	
+
 }
