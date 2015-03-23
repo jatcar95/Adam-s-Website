@@ -33,9 +33,9 @@
 		</div>
 
 		<div id="blog">
-			<form id="newPost">
+			<form id="newPost" method="POST" action="submitPost.php">
 				<h2>New Post</h2>
-				<input type="text" name="title"> <br>
+				<input type="text" name="title" placeholder="Title"> <br>
 				<textarea rows="10" cols="20"></textarea>	
 			</form>
 
