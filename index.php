@@ -4,13 +4,10 @@
 	$cookie_name = $_SERVER['REMOTE_ADDR'];
 	$cookie_value = "foo";
 	if (isset($_COOKIE[$cookie_name])) {
-		inc_views();
+		$view_count = file_get_contents("viewCount.txt") + 1;
+		file_put_contents("viewCount.txt", $view_count);
 	} else {
 		setcookie($cookie_name, $cookie_value, time() + 60*60);
-	}
-
-	function inc_views() {
-		$view_count_file = fopen("viewCount.txt", "r+");
 	}
 ?>
 
