@@ -24,8 +24,16 @@ body {
 	margin-right: 2%;
 }
 
-.logo {
-	width: 100px;
+#profile > img {
+	width: 100%;
+}
+
+#logo {
+	height: 75px;
+}
+
+#logo img {
+	height: 100%;
 }
 
 /* right */
@@ -41,9 +49,5 @@ body {
 h1 {
 	text-align: center;
 
-}
-
-img {
-	width: 100%;
 }
 
