@@ -30,7 +30,7 @@ body {
 }
 
 #logo {
-	height: 75px;
+	height: 50px;
 }
 
 #logo a {
@@ -48,6 +48,12 @@ body {
 	margin-left: 2%;
 	margin-right: 3%;
 	/* background-color: red; /* for testing */
+}
+
+#newpost, #newpost textarea, #newposttitle {
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 /* other */
