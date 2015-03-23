@@ -2,29 +2,44 @@ body {
 	
 }
 
-#title {
-	text-align: center;
-}
-
+/* top part */
 #menu {
 	width: 90%;
+	height: 40px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .menuitem {
-	width: 20%;
+	width: 20%; /* Hard-coded to fit 5 columns */
 	float: left;
+	text-align: center;
 }
 
+/* left */
 #profile {
-	width: 200px;
+	width: 30%;
 	float: left;
+	margin-left: 3%;
+	margin-right: 2%;
 }
 
+/* right */
 #blog {
-	width: ;
+	width: 60%;
 	float: left;
+	margin-left: 2%;
+	margin-right: 3%;
+	/* background-color: red; /* for testing */
 }
 
-.img {
-	width: inherit;
+/* other */
+h1 {
+	text-align: center;
+
 }
+
+img {
+	width: 100%;
+}
+
