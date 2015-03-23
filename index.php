@@ -6,9 +6,10 @@
 	$view_count = file_get_contents("viewCount.txt");
 	if (!isset($_COOKIE[$cookie_name])) {
 		setcookie($cookie_name, $cookie_value, time() + 60*60);
+	} else {
+		$view_count = $view_count + 1;
+		file_put_contents("viewCount.txt", $view_count);
 	}
-	$view_count = $view_count + 1;
-	file_put_contents("viewCount.txt", $view_count);
 ?>
 
 <html>
@@ -36,9 +37,9 @@
 			</p>
 
 			<div id="logo">
-				<a href="https://www.facebook.com/adam.griffis.3?fref=ts"><img src="images/logoFacebook.png"></a>
-				<a href="https://twitter.com/adam_griffis"><img src="images/logoTwitter.jpg"></a>
-				<a href="http://www.linkedin.com/in/adamgriffis/en"><img src="images/logoLinkedIn.png"></a>
+				<a target="_blank" href="https://www.facebook.com/adam.griffis.3?fref=ts"><img src="images/logoFacebook.png"></a>
+				<a target="_blank" href="https://twitter.com/adam_griffis"><img src="images/logoTwitter.jpg"></a>
+				<a target="_blank" href="http://www.linkedin.com/in/adamgriffis/en"><img src="images/logoLinkedIn.png"></a>
 			</div>
 
 			<p>
