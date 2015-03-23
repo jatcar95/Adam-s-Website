@@ -1,4 +1,16 @@
 <!DOCTYPE html>
+
+<?php
+	$cookie_name = $_SERVER['REMOTE_ADDR'];
+	$cookie_value = "foo";
+	if (isset($_COOKIE[$cookie_name])) {
+		$view_count = file_get_contents("viewCount.txt") + 1;
+		file_put_contents("viewCount.txt", $view_count);
+	} else {
+		setcookie($cookie_name, $cookie_value, time() + 60*60);
+	}
+?>
+
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/adam.css">
@@ -14,7 +26,7 @@
 			<span class="menuitem">Home</span>
 			<span class="menuitem">Pictures</span>
 			<span class="menuitem">Travel Blog</span>
-			<span class="menuitem">Academic op. Ed</span>
+			<span class="menuitem">Academia</span>
 		</div>
 
 		<div id="profile">
@@ -30,14 +42,15 @@
 			</div>
 
 			<p>
-				Views: lskdjf;askdfj
+				Views:
+
 			</p>
 		</div>
 
 		<div id="blog">
 			<form id="newPost" method="post" action="php/submitPost.php">
 				<h2>New Post</h2>
-				<input type="text" name="title" placeholder="Title"> <br>
+				<input type="text" name="title" placeholder="Title" id="newposttitle"> <br>
 				<textarea name="post" rows="5" cols="50" placeholder="Type your post here"></textarea>
 				<input type="submit">	
 			</form>
