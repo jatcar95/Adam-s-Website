@@ -1,4 +1,19 @@
 <!DOCTYPE html>
+
+<?php
+	$cookie_name = $_SERVER['REMOTE_ADDR'];
+	$cookie_value = "foo";
+	if (isset($_COOKIE[$cookie_name])) {
+		inc_views();
+	} else {
+		setcookie($cookie_name, $cookie_value, time() + 60*60);
+	}
+
+	function inc_views() {
+		$view_count_file = fopen("viewCount.txt", "r+");
+	}
+?>
+
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/adam.css">
@@ -14,7 +29,7 @@
 			<span class="menuitem">Home</span>
 			<span class="menuitem">Pictures</span>
 			<span class="menuitem">Travel Blog</span>
-			<span class="menuitem">Academic op. Ed</span>
+			<span class="menuitem">Academia</span>
 		</div>
 
 		<div id="profile">
@@ -30,7 +45,8 @@
 			</div>
 
 			<p>
-				Views: lskdjf;askdfj
+				Views:
+
 			</p>
 		</div>
 
