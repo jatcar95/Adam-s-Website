@@ -15,9 +15,6 @@
 			<span class="menuitem">Pictures</span>
 			<span class="menuitem">Travel Blog</span>
 			<span class="menuitem">Academic op. Ed</span>
-			<div>
-				# of views: -302591
-			</div>
 		</div>
 
 		<div id="profile">
@@ -26,8 +23,13 @@
 				Hello, I'm Adam. I'm super cool. Look at my super cool website :)
 			</p>
 			<div>
-				some links will go here
+				<a class="logo" href="https://www.facebook.com/adam.griffis.3?fref=ts"><img src="images/logoFacebook.png"></a>
+				<a class="logo" href="https://twitter.com/adam_griffis"><img src="images/logoTwitter.jpg"></a>
+				<a class="logo" href="http://www.linkedin.com/in/adamgriffis/en"><img src="images/logoLinkedIn.jpg"></a>
 			</div>
+			<p>
+				Views: lskdjf;askdfj
+			</p>
 		</div>
 
 		<div id="blog">
