@@ -35,10 +35,11 @@
 		</div>
 
 		<div id="blog">
-			<form id="newPost" method="POST" action="submitPost.php">
+			<form id="newPost" method="POST" action="html/submitPost.php">
 				<h2>New Post</h2>
 				<input type="text" name="title" placeholder="Title"> <br>
-				<textarea rows="10" cols="20"></textarea>	
+				<textarea name="post" rows="5" cols="50" placeholder="Type your post here"></textarea>
+				<input type="submit">	
 			</form>
 
 			<div>
