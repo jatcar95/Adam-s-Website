@@ -50,7 +50,9 @@
 			</form>
 
 			<div id="slideshow">
-				picture slideshow
+			<?php
+				#TODO: add all the pictures in here
+			?>
 			</div>
 
 			<div>
