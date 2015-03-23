@@ -5,7 +5,7 @@ function() {
 	});
 
 	function startSlideshow() {
-		var images = $("#slideshow").children().each(function() {
+		$("#slideshow").children().each(function() {
 			$(this).hide();
 		});
 	}
