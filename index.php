@@ -3,7 +3,7 @@
 <?php
 	$cookie_name = $_SERVER['REMOTE_ADDR'];
 	$cookie_value = "foo";
-	$view_count = file_get_contents("viewCount.txt")
+	$view_count = file_get_contents("viewCount.txt");
 	if (isset($_COOKIE[$cookie_name])) {
 		$view_count = $view_count + 1;
 		file_put_contents("viewCount.txt", $view_count);
