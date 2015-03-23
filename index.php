@@ -56,7 +56,7 @@
 				<input type="submit">	
 			</form>
 
-			<div>
+			<div id="slideshow">
 				picture slideshow
 			</div>
 
